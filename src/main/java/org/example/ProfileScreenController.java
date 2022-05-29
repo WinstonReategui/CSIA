@@ -3,40 +3,50 @@ package org.example;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
-import javax.swing.table.TableColumn;
-import javax.swing.text.TabableView;
-import java.awt.*;
 import java.io.IOException;
-import java.util.ArrayList;
+
 
 public class ProfileScreenController {
 
-    public TextField mMark;
-    public TextField bDate;
-    public TextField aAge;
-    public TextField aAverageMark;
-    public TextField cCathegory;
-    public TabableView refereesTable;
-    public TableColumn<referee, String> refereesName = new TableColumn<>("Name");
-    public ObservableList<referee> referees = FXCollections.observableArrayList();
+
+    public TableView tableMatches;
+    public TableColumn<Referee, String> refereesName = new TableColumn<>("Name");
+    public TableColumn<Referee, Integer> refereesAge = new TableColumn<>("Age");
+    public ObservableList<Referee> referees = FXCollections.observableArrayList();
+    public TextField markTextField;
+    public TextField averageMarkTextField;
+    public TextField categoryTextField;
+    public TextField ageTextField;
+    public TextField dateTextField;
+    public ChoiceBox nameRefChoiceBox;
+    public TextArea notesFeedbackTextArea;
+    public TableView tableDec;
 
     public void switchToMainScreen(ActionEvent actionEvent) throws IOException {
         App.setRoot("MainScreen");
     }
 
-    ArrayList<referee> referees = new ArrayList();
     public void initialize(){
 
-        referees.add(new referee());
+        referees.add(new Referee("Martin", 28));
 
-        refereesName.SetCellValueFactory(new PropertyValueFactory<>("name"));
-        contactsTable.getColumns.add(refereesName);
-        contactsTable.setItems(contacts);
+        refereesName.setCellValueFactory(new PropertyValueFactory<Referee,String>("name"));
+
+        refereesAge.setCellValueFactory(new PropertyValueFactory<Referee, Integer>("age"));
+
+        tableMatches.getColumns().add(refereesName);
+        tableMatches.getColumns().add(refereesAge);
+        tableMatches.setItems(referees);
 
     }
 
     public void saveBtn(ActionEvent actionEvent){
-        venues.add(new Venue(m.));
+
+    }
+
+    public void saveMarkBtn(ActionEvent actionEvent) {
     }
 }
