@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.AnalysisScreenController">
+<AnchorPane fx:id="analysisScreenPane" prefHeight="600.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.AnalysisScreenController">
    <children>
       <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToMainScreen" text="Return" />
       <TextArea fx:id="nNotesPitch" layoutX="436.0" layoutY="456.0" prefHeight="133.0" prefWidth="297.0" />
@@ -23,7 +23,6 @@
             <TableColumn prefWidth="282.0" text="Action and Decision" />
          </columns>
       </TableView>
-      <Label layoutX="52.0" layoutY="53.0" text="Video" />
       <Label layoutX="541.0" layoutY="62.0" text="Football Pitch">
          <font>
             <Font name="Trebuchet MS" size="14.0" />
@@ -31,13 +30,14 @@
       <Label layoutX="568.0" layoutY="435.0" text="Notes" />
       <TextField fx:id="sMatchName" layoutX="218.0" layoutY="15.0" />
       <Label layoutX="139.0" layoutY="19.0" text="Match Name" />
-      <Label layoutX="473.0" layoutY="19.0" text="Match" />
+      <Label layoutX="478.0" layoutY="19.0" text="Match" />
       <ChoiceBox fx:id="cBoxMatch" layoutX="521.0" layoutY="15.0" prefHeight="26.0" prefWidth="211.0" />
       <ImageView fitHeight="377.0" fitWidth="234.0" layoutX="468.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../../../Downloads/Football_field.svg.png" />
          </image>
       </ImageView>
-      <Label layoutX="201.0" layoutY="191.0" text="Video Player" />
+      <Label layoutX="132.0" layoutY="54.0" text="Referee Name" />
+      <TextField layoutX="218.0" layoutY="50.0" />
    </children>
 </AnchorPane>
