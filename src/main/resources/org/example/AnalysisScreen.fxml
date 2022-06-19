@@ -30,8 +30,8 @@
       <Label layoutX="568.0" layoutY="435.0" text="Notes" />
       <TextField fx:id="sMatchName" layoutX="218.0" layoutY="15.0" />
       <Label layoutX="139.0" layoutY="19.0" text="Match Name" />
-      <Label layoutX="478.0" layoutY="19.0" text="Match" />
-      <ChoiceBox fx:id="cBoxMatch" layoutX="521.0" layoutY="15.0" prefHeight="26.0" prefWidth="211.0" />
+      <Label layoutX="436.0" layoutY="20.0" text="Match" />
+      <ChoiceBox fx:id="cBoxMatch" layoutX="480.0" layoutY="16.0" prefHeight="26.0" prefWidth="211.0" />
       <ImageView fitHeight="377.0" fitWidth="234.0" layoutX="468.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../../../Downloads/Football_field.svg.png" />
