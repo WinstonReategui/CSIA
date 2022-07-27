@@ -11,15 +11,15 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.LoginScreenController">
          <children>
-            <Button layoutX="340.0" layoutY="334.0" onAction="#switchToMainScreen" prefHeight="33.0" prefWidth="121.0" text="Enter">
+            <Button layoutX="350.0" layoutY="332.0" onAction="#switchToMainScreen" prefHeight="33.0" prefWidth="121.0" text="Enter">
 
          <font>
             <Font name="Kefa Regular" size="14.0" />
          </font></Button>
             <Label layoutX="14.0" layoutY="17.0" text="Primary View" />
-      <PasswordField fx:id="passwordtxt" layoutX="275.0" layoutY="278.0" prefHeight="42.0" prefWidth="270.0" promptText="Please Enter Youy Password" />
+      <PasswordField fx:id="passwordtxt" layoutX="275.0" layoutY="278.0" prefHeight="42.0" prefWidth="270.0" promptText="Please Enter Your Password" />
       <DatePicker fx:id="cCalendar" layoutX="584.0" layoutY="25.0" />
-      <ImageView fitHeight="127.0" fitWidth="177.0" layoutX="313.0" layoutY="119.0">
+      <ImageView fitHeight="127.0" fitWidth="177.0" layoutX="322.0" layoutY="119.0">
          <image>
             <Image url="@../../../../../../../Downloads/nike-flight-copa-libertadores-2022-pelota-oficial.jpeg" />
          </image>

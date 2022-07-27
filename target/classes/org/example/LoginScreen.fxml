@@ -11,25 +11,20 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.LoginScreenController">
          <children>
-            <Button layoutX="350.0" layoutY="371.0" onAction="#switchToMainScreen" prefHeight="33.0" prefWidth="121.0" text="Enter">
+            <Button layoutX="350.0" layoutY="332.0" onAction="#switchToMainScreen" prefHeight="33.0" prefWidth="121.0" text="Enter">
 
          <font>
             <Font name="Kefa Regular" size="14.0" />
          </font></Button>
-            <Label layoutX="52.0" layoutY="30.0" text="Primary View" />
-      <PasswordField fx:id="pUserPassword" layoutX="275.0" layoutY="278.0" prefHeight="42.0" prefWidth="270.0" />
+            <Label layoutX="14.0" layoutY="17.0" text="Primary View" />
+      <PasswordField fx:id="passwordtxt" layoutX="275.0" layoutY="278.0" prefHeight="42.0" prefWidth="270.0" promptText="Please Enter Your Password" />
       <DatePicker fx:id="cCalendar" layoutX="584.0" layoutY="25.0" />
-      <Label layoutX="330.0" layoutY="339.0" text="Please Enter Your Password">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="127.0" fitWidth="177.0" layoutX="313.0" layoutY="119.0">
+      <ImageView fitHeight="127.0" fitWidth="177.0" layoutX="322.0" layoutY="119.0">
          <image>
             <Image url="@../../../../../../../Downloads/nike-flight-copa-libertadores-2022-pelota-oficial.jpeg" />
          </image>
       </ImageView>
-      <Label fx:id="uUsername" layoutX="369.0" layoutY="83.0" text="Username">
+      <Label fx:id="uUsername" layoutX="369.0" layoutY="83.0" text="Ana Perez">
          <font>
             <Font name="American Typewriter" size="17.0" />
          </font>
@@ -37,6 +32,11 @@
       <Label fx:id="hHelpEmail" layoutX="518.0" layoutY="558.0" text="Help: winston.fabian.reategui@gmail.com">
          <font>
             <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="incorrectP" layoutX="569.0" layoutY="291.0" prefHeight="17.0" prefWidth="135.0">
+         <font>
+            <Font size="14.0" />
          </font>
       </Label>
          </children>
